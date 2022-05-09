@@ -82,7 +82,7 @@ Ce système comprend :
 
 À l’arrivée d’un client devant le distributeur, les valeurs sont évidemment « 00.00 ». On affiche toujours deux chiffres avant le point et deux après. Dans votre cas, le point décimal sera simulé par les « : » présents entre les digits 2 et 3.
 
-Quand le pistolet de la pompe est actionné (bouton appuyé), le remplissage débute : le prix s’affiche et augmente dépendamment du prix du litre. Le volume d’essence s’incrémente de 15 litres par minute.
+Quand le pistolet de la pompe est actionné (bouton appuyé), le remplissage débute : le prix s’affiche et augmente dépendamment du prix du litre. Le volume d’essence s’incrémente de 23 litres par minute.
 Quand le pistolet de la pompe est relâché, le remplissage cesse.
 
 Après 5 secondes de repos du pistolet (bouton relâché), l’affichage montre, en alternance, le prix à payer et la quantité d’essence. La fréquence d’affichage est de 1000 millisecondes.
