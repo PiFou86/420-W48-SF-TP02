@@ -4,28 +4,35 @@
 
 ### 1.1 - Déroulement du TP
 
-- Le projet est réalisé en équipe de 2 personnes
-- Vous devez utiliser Git pour gérer vos sources
+- Remise du travail: vendredi 26 mai 2023, 23:59
+- Ce travail est réalisé en équipe de 2 membres et seuls les membres de cette équipe y contribuent
+- Toutes les réponses fournies doivent être originales (produites par l’étudiant ou un membre de l’équipe)
+- Toute copie de code, de portion de code, d’algorithme ou de texte doit faire mention de sa source
+- L’emprunt ou la copie de code ou de portions de code est interdite
+- Tout constat de plagiat, tricherie ou fraude sera automatiquement déclaré à la Direction et les sanctions prévues seront appliquées
+- Vous devez utiliser utiliser votre dépôt Git pour faire votre travail : si une situation particulière est détectée, vos commits moduleront votre note dans le groupe.
 - Vous devez utiliser SharePoint pour gérer votre document de rapport (Onglet "Fichiers" de votre équipe Teams)
-- La remise du travail doit être effectuée sur et à la date indiquée  sur la plateforme d'enseignement
+- La remise du travail doit être effectuée sur et à la date indiquée sur la plateforme d'enseignement Léa
 
-### 1.2 - À remettre sur la plateforme d'enseignement
+### 1.2 - À remettre sur la plateforme d'enseignement Léa
 
 - Un document word contenant le détail du projet
-- Votre code source
-- Le lien YouTube de votre vidéo de présentation
+- Votre code source C++ avec la structure de PlatformIO
+- Vous devez fournir le lien d'une vidéo de 5 minutes illustrant le circuit, le code et le fonctionnement :
+-  - La vidéo doit être déposée sur YouTube
+-  - En lien non listé
+-  - La vidéo doit être accessible jusqu'à un an après la remise du travail
+-  - La vidéo doit être en français
 
 ### 1.3 - Structure de la remise
 
-- Vous devez remplir le fichier "AUTHORS.md".
-  Il donne le nom et matricule des équipiers
-- Votre code source doit être dans le répertoire  ```src``` du présent dépôt Git
+- Vous devez remplir le fichier "AUTHORS.md". Il donne le nom et matricule des équipiers
+- Votre code source doit être dans le répertoire ```src``` du présent dépôt Git
 - Le répertoire source doit suivre la structure d’un projet Platform.io
-- Vous devez fournir une vidéo de 5 minutes illustrant le circuit, le code et le fonctionnement :
-  - La vidéo doit être déposée sur Youtube avec une option de partage « non listée »
-  - Le lien de la vidéo doit être indiqué dans le document word et dans le fichier "AUTHORS.md"
-
+- Le lien de la vidéo doit indiqué dans le document word et dans le fichier "AUTHORS.md"
+- La vidéo doit être déposée sur Youtube avec une option de partage « non listée »
 - Le répertoire "documents" doit contenir votre rapport de TP
+
 
 ### 1.4 - Évaluation
 
@@ -82,7 +89,7 @@ Ce système comprend :
 
 À l’arrivée d’un client devant le distributeur, les valeurs sont évidemment « 00.00 ». On affiche toujours deux chiffres avant le point et deux après. Dans votre cas, le point décimal sera simulé par les « : » présents entre les digits 2 et 3.
 
-Quand le pistolet de la pompe est actionné (bouton appuyé), le remplissage débute : le prix s’affiche et augmente dépendamment du prix du litre. Le volume d’essence s’incrémente de 23 litres par minute.
+Quand le pistolet de la pompe est actionné (bouton appuyé), le remplissage débute : le prix s’affiche et augmente dépendamment du prix du litre. Le volume d’essence s’incrémente de 15 litres par minute.
 Quand le pistolet de la pompe est relâché, le remplissage cesse.
 
 Après 5 secondes de repos du pistolet (bouton relâché), l’affichage montre, en alternance, le prix à payer et la quantité d’essence. La fréquence d’affichage est de 1000 millisecondes.
@@ -90,6 +97,8 @@ Après 5 secondes de repos du pistolet (bouton relâché), l’affichage montre,
 Afin de simplifier le problème, le remplissage s’arrête quand le premier entre le volume ou le prix atteint 99.99.
 
 Lorsque le bouton est appuyé à nouveau, le cycle de remplissage se poursuit.
+
+Pour attirer l'attention du préposé pendant le remplissage du réservoir, utilisez le buzzer passif pour émettre une séquence de 3 bips courts au début du remplissage (première pression sur le pistolet de remplissage) et 3 bips longs au moment du paiement. Afin de permettre à tout le monde de se concentrer dans la salle, le buzzer doit être désactivé durant les séances de laboratoire et réactivé seulement pour la démonstration vidéo et vos tests à la maison.
 
 ### 2.2 - Procédures pour la gestion des pompes
 
@@ -101,7 +110,9 @@ Une interface web est offerte au préposé pour modifier le prix à la pompe. A 
 
 Si aucun prix n’a été enregistré dans votre système, la pompe doit afficher « 88:88 » et ne pas permettre le service afin de forcer le préposer à indiquer le prix du litre.
 
-(Optionnel : cette dernière action ne peut pas se faire si la pompe est en cours d'utilisation par un client + 5%)
+### 2.4 - Modification du son émis par le buzzer (optionnel + 5%)
+
+À l'étape 2.1, remplacez les signaux du buzzer par une mélodie de votre choix.
 
 ## 3 - Description détaillée du document à remettre
 
@@ -115,7 +126,7 @@ Le document word doit décrire le contexte du projet, sa planification, la répa
   - Description des étapes du projet (5%)
   - Diagramme de classes (5%)
   - Schéma du montage (5%)
-  - Inventaire des pièces et évaluation du coût (5%)
+  - Inventaire complet des pièces et évaluation du coût de fabrication (5%)
   - Registre des heures consacrées au projet (5%). Le registre doit indiquer la répartition des tâches. Le registre doit montrer les tâches respectives que chaque personne aura fait avec le nombre d’heures par tâche.
 
 2. Vidéo de 5 minutes illustrant le fonctionnement (15%)
@@ -125,7 +136,8 @@ Le document word doit décrire le contexte du projet, sa planification, la répa
 
 3. Code (50%)
   - Bon fonctionnement du programme (30%)
-    - Incrémentation du nombre de litres (5%)
+    - Incrémentation du nombre de litres (2,5%)
+    - Indicateur sonore (2,5%)
     - Simulation du paiement (2,5%)
     - Affichage du prix à payer durant le service (5%)
     - Alternance du prix à payer et du nombre de litres (5%)
